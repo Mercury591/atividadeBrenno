@@ -58,11 +58,11 @@ class Quiz {
             System.out.println();
         }
 
-        double pontuacaoFinal = 12.5;
+        double pontuacaoFinal = ((pontuacao/15.0)*100);
         DecimalFormat df = new DecimalFormat("0.00");
+        String resultado = df.format(pontuacaoFinal);
 
-
-        System.out.println("Você acertou " + pontuacaoFinal + "% do quiz!");
+        System.out.println("Você acertou " + resultado + "% do quiz!");
         System.out.println("Quiz finalizado! Sua pontuação final é: " + pontuacao);
     }
 }
