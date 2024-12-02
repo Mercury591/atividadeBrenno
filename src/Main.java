@@ -63,6 +63,7 @@ class Quiz {
         String resultado = df.format(pontuacaoFinal);
 
         System.out.println("Você acertou " + resultado + "% do quiz!");
+        System.out.println("Você errou " + (15 - pontuacao) + " questões!");
         System.out.println("Quiz finalizado! Sua pontuação final é: " + pontuacao);
     }
 }
